@@ -1,0 +1,15 @@
+1) drop unnecessary columns
+7) поискать выбросы в данных посмотреть средние, максимальные, минимальные значения
+2) fill nulls or drop
+3) correlation (pandas.corr)
+4) for categorial features:
+one hot encoding / hashing trick / label encoding (-) 
+hashing_trick:
+hash_space = 25
+for s in ('university.degree', 'high.school', 'illiterate'):
+    print(s, '->', hash(s) % hash_space)
+5) for numeric features:
+StandardScaler
+6) train test split
+9) bootstrap (увеличение выборки)?????
+8) catboost(сам справляется с категориальными фичами?), lgbm, gridsearch cv
